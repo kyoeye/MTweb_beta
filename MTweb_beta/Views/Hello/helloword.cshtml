@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "helloword";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>helloword</h2>
+
+<ul>
+    @for(int a = 0; a<ViewBag.NumTimes;a++)
+    {
+        <li>@ViewBag.Message@a </li>
+
+    }
+</ul>
+
