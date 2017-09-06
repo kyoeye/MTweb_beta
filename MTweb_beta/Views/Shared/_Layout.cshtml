@@ -18,12 +18,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("测试", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("MoeTon", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                    @*<li>@Html.ActionLink("主页", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("隐私声明", "Index", "About", new { area = "~/Views/About.cshtml" }, null)</li>*@
                 </ul>
             </div>
         </div>
@@ -32,7 +32,10 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+            <script src="https://moa.moe/">
+            </script>
+            <script src="https://hitoapi.cc/ap/"></script>
+            <script src="https://source.pixiv.net/source/embed.js" data-id="64438758_5651b20f7f2dfded1533f42b04ef4046" data-size="medium" data-border="on" charset="utf-8"></script><noscript><p><a href="https://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=64438758" target="_blank">MIKU</a> by <a href="https://www.pixiv.net/member.php?id=15877764" target="_blank">画渣针眼</a> on <a href="https://www.pixiv.net/" target="_blank">pixiv</a></p></noscript>
         </footer>
     </div>
 
